@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web css</title>
+
+
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 10px;
+      }
+
+      .bx {
+        /* height: 200px; */
+        max-width: 100%;
+        border: 1px solid black;
+        display: flex;
+        /* flex-wrap: wrap; */
+        gap: 10px;
+
+      }
+      .item{
+        width: 100px;
+        
+      }
+
+      .bx1 {
+        background-color: aquamarine;
+        order:5;
+        flex-shrink: 3;
+      }
+
+      .bx2 {
+        background-color: rgb(255, 127, 249);
+        order: 4;
+      }
+
+      .bx3 {
+        background-color: rgb(255, 127, 133);
+        order:3;
+      }
+
+      .bx4 {
+        background-color: rgb(174, 227, 0);
+        order: 2;
+      }
+
+      .bx5 {
+        background-color: rgb(15, 73, 149);
+        order: 1;
+      }
+      
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="bx">
+      <div class="item bx1">
+        <h3>Box1</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, tempore voluptatibus adipisci sequi vero illum, libero omnis cupiditate ut, odio ab provident sunt possimus labore dolorem earum distinctio voluptas repellendus?</p>
+      </div>
+      <div class="item bx2">
+        <h3>Box2</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, tempore voluptatibus adipisci sequi vero illum, libero omnis cupiditate ut, odio ab provident sunt possimus labore dolorem earum distinctio voluptas repellendus?</p>
+      </div>
+      <div class="item bx3">
+        <h3>Box3</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, tempore voluptatibus adipisci sequi vero illum, libero omnis cupiditate ut, odio ab provident sunt possimus labore dolorem earum distinctio voluptas repellendus?</p>
+      </div>
+      <div class="item bx4">
+        <h3>Box4</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, tempore voluptatibus adipisci sequi vero illum, libero omnis cupiditate ut, odio ab provident sunt possimus labore dolorem earum distinctio voluptas repellendus?</p>
+      </div>
+
+      <div class="item bx5">
+        <h3>Box5</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, tempore voluptatibus adipisci sequi vero illum, libero omnis cupiditate ut, odio ab provident sunt possimus labore dolorem earum distinctio voluptas repellendus?</p>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+</html>
