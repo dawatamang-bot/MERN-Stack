@@ -1,175 +1,413 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web</title>
-</head>
-<body>
-<title>CSS</title>
-<link rel="stylesheet" href="style.css">
-   <style>
-    h1 { font-size : 100%;}
-   </style>
-    <!-- heading tags -->
-    <h1 style="color: aqua;">Mahendra</h1>
-    <h2>Mahendra</h2>
-    <u><h3>Mahendra</h3></u>
-    <h4>Mahendra</h4>
-    <h5>Mahendra</h5>
-    <S><h1>HEllo</h1></S>
-    <u><h3><u>Mahendra</u></h3></u>
-    <p>Lorem, ipsum.
-    </p>
-    <p>dawa &nbsp; &nbsp;  tamang</p>
-   
-        <h1>
-            dawa
-        </h1>
-        <style>
-            .bx,h1, h3{
-                 color: red;
-            }
-            .bx2, h1, { 
-                color: blue;
-            }
-        </style>
-        <div class="bx">
-            <h1>Hello</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam neque, rem harum aut cum inventore nam repudiandae? Laudantium, dignissimos libero est id fugit debitis, minima iusto, vero molestias aliquam blanditiis?</p>
-            <h3>HEllo 3</h3>
-        </div>
-        <div class="bx2">
-            <h1>Hello 2</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo non incidunt harum voluptatibus repellendus cum molestiae dignissimos. Velit ex repudiandae reprehenderit, quod hic officia nihil quasi earum fugit blanditiis amet.</p>
-        </div>
-    </DEL>
-    <b>HEllo</b>
-    <strong>
-    <h1>
-        DAWA
-    </h1>
-    </strong>
-    <table cellspacing="40px">
-        <tr>
-            <td>
-                <img 
-                width="400"
-                height="400"
-                src="assets/img/image.jpg" alt="Girl">  
-            </td>
-            <td><h1> I'm Dawa Tamang</h1>
-                <p><em>Mern Stack</em></p>
-                <strong>Mongo Express React Node</strong>
-                <strong> <a href="contact.html" target="_blank">Contact Us</a></strong>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Perspiciatis, voluptas quae? Ratione libero fuga sed deserunt <br>possimus enim maxime a totam reprehenderit aut perspiciatis consequuntur, eligendi ab ipsa id! Totam.</p>
-            </td>
-        </tr>
-    </table>
-   
-<img
-width="400px"
-height="400px"
-src="https://img.etimg.com/thumb/width-1600,height-900,imgsize-348620,resizemode-75,msid-70813475/magazines/panache/with-a-dash-of-curry-spices-tandoori-mayonnaise-on-the-side-indians-gave-momos-a-desi-twist.jpg" alt=""></body>
-<br>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="assets/images/326663_language_web_icon.png"
+      type="image/x-icon"
+    />
+    <title>Document</title>
 
-<h1>My Class</h1>
-    <li>One</li>
-    <li>Two</li>
-    <li>Three</li>
-</ul>
-<table border="3px"cellpadding="5px">
-    <thead>
-        <th>Activity</th>
-        <th>Timing</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>yoga</td>
-            <td>5:am</td>
-        </tr>
-        <tr>
-            <td>Breakfast</td>
-            <td>6:am</td>
-        </tr>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    </tbody>
-    <tbody></tbody>
-</table>
-<h3>My Hobbies</h3>
-<ol>
-    <li>Dance</li>
-    <li>Play</li>
-    <li>Sing</li>
-</ol>
-<h3>Dawa</h3>
-<ol type="a">
-    <li>Dance</li>
-    <li>Play</li>
-    <li>Sing</li>
-</ol>
-<table border="3px" cellpadding="5px">
-    <tr>
-        <td>Skills</td>
-        <td>Ratings</td>
-        <td>Total</td>
-    </tr>
-    <tr>
-        <td>Python</td>
-        <td colspan="2">⭐⭐⭐⭐⭐</td>
-    </tr>
-    <tr>
-        <td>JavaScript</td>
-        <td rowspan="2" colspan="2">⭐⭐⭐⭐⭐</td>
-    </tr>
-</table>
-<dl><strong>Novel</strong></Novel></dl>
-<dd>Lorem ipsum dolor sit amet.</dd>
-<dl>Novel</dl>
-<dt>Lorem ipsum dolor sit amet consectetur.</dt>
-        <div>
-            <h1>Raman</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui nihil quibusdam repellendus quas quidem commodi nesciunt non? Dicta quae optio fugiat voluptatum quo? Quisquam velit soluta iusto, vero placeat laborum!
-            </p>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap");
+
+      :root {
+        --main-color: #1e293b;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: var(--main-color);
+        color: white;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 7px 25px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        padding-left: 20px;
+      }
+
+      /* .box {
+        border: 1px solid gold;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: 100px;
+        justify-items: end;
+      }
+
+
+      .box h2 {
+        justify-self: start;
+      } */
+
+      img {
+        width: 100%;
+      }
+
+      .display {
+        display: grid;
+        background-color: var(--main-color);
+        color: white;
+        height: 250px;
+        grid-template-columns: 2fr 1fr;
+        padding: 15px;
+      }
+
+      .dis-info {
+        padding-top: 5%;
+        line-height: 2rem;
+      }
+
+      .dis-info input[type="text"] {
+        outline: none;
+        width: 40%;
+        padding: 4px 10px;
+        border-radius: 10px;
+        /* text-align: center; */
+      }
+
+      .dis-info button {
+        border: none;
+        padding: 5px 5px;
+        cursor: pointer;
+      }
+
+      .dis-info button:hover {
+        background-color: black;
+        color: white;
+      }
+
+      .dis-img img {
+        border-radius: 10px;
+      }
+
+      .courses {
+        margin: 100px 0 10px 0;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      /* .dis-course .icon,h3 {
+        text-align: center;
+      } */
+
+      .dis-course h3 {
+        padding: 10px 0;
+      }
+
+      .testi {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 0 20px;
+        align-items: start;
+        gap: 10px;
+        margin: 60px 0;
+      }
+
+      .card {
+        background-color: var(--main-color);
+        color: white;
+        padding: 10px 0;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+      }
+
+      .card {
+        padding: 10px 15px;
+      }
+
+      .card .info {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+
+      .user-img img {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      @media (max-width: 870px) {
+        .display {
+          grid-template-columns: 1fr;
+          height: auto;
+        }
+
+        .dis-img {
+          padding: 50px 0;
+        }
+
+        .dis-img img {
+          height: 200px;
+
+          border-radius: 10px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- header section -->
+    <header>
+      <div class="logo">
+        <h1>Skillz</h1>
+      </div>
+
+      <nav>
+        <a href="">About</a>
+        <a href="">Contact</a>
+      </nav>
+    </header>
+
+    <!-- display section -->
+
+    <div class="display">
+      <div class="dis-info">
+        <h1>Learn any digital skill of your choice today</h1>
+
+        <h3>Over 30000 students currently learn with us</h3>
+
+        <form>
+          <input type="text" placeholder="Enter your email address" />
+          <button type="submit">Start Learning</button>
+        </form>
+        <p>Try out our free courses.No risk, no credit card required</p>
+      </div>
+
+      <div class="dis-img">
+        <img
+          src="https://media.istockphoto.com/id/1452573663/photo/web-conference-from-home.jpg?b=1&s=170667a&w=0&k=20&c=-C9XTXQcXFKqOlF-oyJ8rPTMdOksFCv2sqF7-B4FNYc="
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- courses sections -->
+
+    <div class="courses">
+      <div class="dis-course">
+        <div class="icon">
+          <i class="fa-solid fa-folder-open fa-2x"></i>
         </div>
-        <div>
-            <h1>Mahendra</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui nihil quibusdam repellendus quas quidem commodi nesciunt non? Dicta quae optio fugiat voluptatum quo? Quisquam velit soluta iusto, vero placeat laborum!
-            </p>
+
+        <h3>Over 300 available courses</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. A saepe,
+          voluptas reprehenderit at temporibus labore beatae corrupti ullam.
+          Necessitatibus, corporis veniam! Dolorem impedit officiis, quis
+          dolores aperiam veritatis dignissimos, quas voluptas itaque sapiente
+          commodi asperiores ab, minus officia doloremque repellendus.
+        </p>
+      </div>
+
+      <div class="dis-course">
+        <div class="icon">
+          <i class="fa-solid fa-folder-open fa-2x"></i>
         </div>
-        <div id="head">
-            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore reprehenderit inventore ullam fuga. Possimus eius incidunt ipsam repellat amet ratione nobis molestias minus eos est vitae recusandae tempora, necessitatibus excepturi?</h1>
+
+        <h3>Over 300 available courses</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. A saepe,
+          voluptas reprehenderit at temporibus labore beatae corrupti ullam.
+          Necessitatibus, corporis veniam! Dolorem impedit officiis, quis
+          dolores aperiam veritatis dignissimos, quas voluptas itaque sapiente
+          commodi asperiores ab, minus officia doloremque repellendus.
+        </p>
+      </div>
+
+      <div class="dis-course">
+        <div class="icon">
+          <i class="fa-solid fa-folder-open fa-2x"></i>
         </div>
-        <div class="section">
-            <h1>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi accusamus, ducimus neque laborum culpa consectetur cum aliquam commodi expedita ad, nulla, est nisi maxime odio aspernatur provident veritatis? Rem, impedit?
-            </h1>
-            <style>
-                .bx+p{
-                     color: red;
- 
-                }
-            </style>
+
+        <h3>Over 300 available courses</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. A saepe,
+          voluptas reprehenderit at temporibus labore beatae corrupti ullam.
+          Necessitatibus, corporis veniam! Dolorem impedit officiis, quis
+          dolores aperiam veritatis dignissimos, quas voluptas itaque sapiente
+          commodi asperiores ab, minus officia doloremque repellendus.
+        </p>
+      </div>
+    </div>
+
+    <!-- testimonials section -->
+
+    <div class="testi">
+      <div class="card">
+        <div class="info">
+          <div class="user-img">
+            <img
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+          </div>
+          <div class="user-info">
+            <h4>Ryan Florence</h4>
+            <p>Remix & React Training</p>
+          </div>
         </div>
-        <div class="bx">
-            <h1>Hello</h1>
-            <div class="bx1">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, illo soluta totam dolores assumenda error laudantium quam ipsum ipsam nisi ea, eos voluptatum? Officiis doloremque aliquid mollitia voluptatibus, culpa exercitationem!
-            </p>
-            </div>
+
+        <div class="detail">
+          <p>I feel like an idiot for not using Tailwind CSS until now.</p>
         </div>
-    </body>
-<style>
-    li:last-child{
-        color: red;
-    }
-</style>
-    <ol>
-        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores modi voluptate asperiores, ratione obcaecati culpa exercitationem! Et dolore dicta aspernatur at minus maiores est omnis dolores hic ab, voluptatum excepturi?</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque iusto quae libero sapiente optio possimus dolorem repudiandae labore nam tenetur facere ex, consequatur blanditiis ullam. Consequuntur alias modi eveniet minus!</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, amet. Animi incidunt natus molestiae sit! Perspiciatis aliquam, sequi fugit delectus culpa sapiente nihil voluptatum optio unde harum dignissimos consequuntur quidem.</li>
-        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, nulla. Aut, porro? Sapiente possimus repellendus aspernatur voluptatem quam quasi iusto labore nobis dolore, doloremque ullam perferendis adipisci dolores impedit quod!</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nesciunt eum odio repellendus consectetur ipsum quidem, assumenda temporibus dolore molestias itaque in placeat! Possimus officia architecto sequi repudiandae corrupti illo?</li>
-    </ol>
-</body>
-</html> -->
+      </div>
+
+      <div class="card">
+        <div class="info">
+          <div class="user-img">
+            <img
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+          </div>
+          <div class="user-info">
+            <h4>Ryan Florence</h4>
+            <p>Remix & React Training</p>
+          </div>
+        </div>
+
+        <div class="detail">
+          <p>
+            Have been working with CSS for over ten years and Tailwind just
+            makes my life easier. It is still CSS and you use flex grid etc but
+            just quicker to write and maintain. You should give it a try
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <div class="user-img">
+            <img
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+          </div>
+          <div class="user-info">
+            <h4>Ryan Florence</h4>
+            <p>Remix & React Training</p>
+          </div>
+        </div>
+
+        <div class="detail">
+          <p>I feel like an idiot for not using Tailwind CSS until now.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <div class="user-img">
+            <img
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+          </div>
+          <div class="user-info">
+            <h4>Ryan Florence</h4>
+            <p>Remix & React Training</p>
+          </div>
+        </div>
+
+        <div class="detail">
+          <p>I feel like an idiot for not using Tailwind CSS until now.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <div class="user-img">
+            <img
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+          </div>
+          <div class="user-info">
+            <h4>Ryan Florence</h4>
+            <p>Remix & React Training</p>
+          </div>
+        </div>
+
+        <div class="detail">
+          <p>I feel like an idiot for not using Tailwind CSS until now.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <div class="user-img">
+            <img
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+          </div>
+          <div class="user-info">
+            <h4>Ryan Florence</h4>
+            <p>Remix & React Training</p>
+          </div>
+        </div>
+
+        <div class="detail">
+          <p>I feel like an idiot for not using Tailwind CSS until now.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <div class="user-img">
+            <img
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+          </div>
+          <div class="user-info">
+            <h4>Ryan Florence</h4>
+            <p>Remix & React Training</p>
+          </div>
+        </div>
+
+        <div class="detail">
+          <p>I feel like an idiot for not using Tailwind CSS until now.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <div class="user-img">
+            <img
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+          </div>
+          <div class="user-info">
+            <h4>Ryan Florence</h4>
+            <p>Remix & React Training</p>
+          </div>
+        </div>
+
+        <div class="detail">
+          <p>I feel like an idiot for not using Tailwind CSS until now.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
