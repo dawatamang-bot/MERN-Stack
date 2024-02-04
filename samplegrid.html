@@ -38,18 +38,14 @@
     }
 
     .main {
-
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-      
+      gap: 20px;
+      padding: 0px 30px;
+      align-items: center;
     }
-
-    .info-dis {
-      
-      text-decoration: none;
-      align-self: center;
-      
+    .info-dis p{
+      text-align: justify;
     }
 
     .card {
@@ -89,6 +85,8 @@
 
     @media (max-width: 560px) {
       .header {
+        display: grid;
+        grid-template-columns: 1fr;
         flex-direction: column;
         align-items: flex-start;
       }
@@ -109,8 +107,11 @@
     </nav>
   </div>
   <div class="main">
+    <div>
     <img src="https://images.unsplash.com/photo-1547032440-08740e6f499e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvbWV8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+  </div>
     <div class="info-dis">
+
       <h1>Sample Grid</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut obcaecati aliquid ipsa perferendis blanditiis animi aperiam magnam debitis saepe veniam! Enim mollitia nulla commodi maiores ipsa sapiente fuga aut dignissimos<p>
     </div>
