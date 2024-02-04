@@ -10,74 +10,91 @@
       padding: 0;
       box-sizing: border-box;
     }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 15px;
+      margin: 0; /* Remove default margin to eliminate extra space */
+      min-height: 100vh;
+    }
     .header {
-      background-color: #ffffff; /* Change background color to a suitable color */
-      color:black;
+      background-color: #ffffff;
+      color: black;
       display: flex;
       justify-content: space-between;
-      align-items: center; /* Align items vertically in the center */
-      padding: 10px 25px; /* Adjust padding for better appearance */
+      align-items: center;
+      padding: 10px 25px;
     }
     nav {
       display: flex;
     }
     nav a {
-      margin-right: 15px; /* Add some spacing between navigation links */
+      margin-right: 15px;
       text-decoration: none;
-      color: rgb(0, 0, 0); /* Set the text color for navigation links */
+      color: rgb(0, 0, 0);
     }
-   
-    
-    .info-dis{
-      margin: 10px;
-      padding: 15px;
+    .main img {
+      padding: 10px;
+      
     }
 
-    .card{
-      padding: 15px;
-      margin: 10px;
+    .main {
+
       display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      
+    }
+
+    .info-dis {
+      
+      text-decoration: none;
+      align-self: center;
+      
+    }
+
+    .card {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr ));
       gap: 10px;
-      
+      margin: 10px;
     }
+
     .card1{
-      padding: 15px;
-      display: grid;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    }
-    .card2{
-      padding: 15px;
-      display: grid;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    }
-    .card3{
-      padding: 15px;
-      display: grid;
-      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    }
-    @media (max-width : 960px) {
-      .main img{
-      grid-template-columns: 1fr;
-      width: 100%;
-      object-fit: cover;
       padding: 20px;
-      }
-      .grid{
-        gap: 10px;
-      }
-      .card{
-        grid-template-columns: 1fr;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      margin: 20px;
+    }
+    
+    .card2{
+      padding: 20px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      margin: 20px;
+    }
+    
+    .card3 {
+      padding: 20px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      margin: 20px;
+    }
+
+    @media (max-width: 960px) {
+      .main img {
+        grid-column: span 2;
+        width: 100%;
+        object-fit: cover;
+        padding: 10px;
+        margin: 10px;
       }
     }
-    @media(max-width: 560px) {
-      .header h1,
-      .header nav,
-      .header a{
-        grid-template-columns: 3fr;
-        justify-self: self-start;
-        margin: 0;
+
+    @media (max-width: 560px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
       }
-      
+      nav {
+        margin-top: 10px;
+      }
     }
 
   </style>
@@ -91,27 +108,26 @@
       <a href="#">CONTACT</a>
     </nav>
   </div>
-  <div class="main grid">
+  <div class="main">
     <img src="https://images.unsplash.com/photo-1547032440-08740e6f499e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvbWV8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
     <div class="info-dis">
-      <h1>Sample Gird</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eius, deleniti corrupti ab saepe sequi quasi excepturi architecto, minus suscipit similique! Architecto, dolore quia! Eum deserunt reiciendis, aut eveniet reprehenderit amet aliquam ducimus voluptas inventore atque veritatis saepe, modi praesentium eos minus debitis ut quos fugiat enim. Mollitia, ab labore.</p>
+      <h1>Sample Grid</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut obcaecati aliquid ipsa perferendis blanditiis animi aperiam magnam debitis saepe veniam! Enim mollitia nulla commodi maiores ipsa sapiente fuga aut dignissimos<p>
     </div>
   </div>
-    <div class="card">
+  <div class="card">
     <div class="card1">
       <h1>Sample Grid 1</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magni dolores neque tenetur vero cumque rerum itaque molestiae laudantium pariatur voluptatum facere, quos quo excepturi voluptatibus ab? Velit, ullam dignissimos.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus facilis assumenda ad. Corporis temporibus eligendi sapiente, minus iste nesciunt inventore cupiditate maxime obcaecati nemo, soluta ad quis sint consequuntur odit.p>
     </div>
     <div class="card2">
       <h1>Sample Grid 2</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magni dolores neque tenetur vero cumque rerum itaque molestiae laudantium pariatur voluptatum facere, quos quo excepturi voluptatibus ab? Velit, ullam dignissimos.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi dolorum deleniti, tempore voluptate temporibus odio ipsum, commodi voluptates quidem dignissimos optio deserunt quas praesentium provident, officiis vel distinctio. Dolorum, in?Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
     </div>
     <div class="card3">
-      <h1>Sample Grid 1</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magni dolores neque tenetur vero cumque rerum itaque molestiae laudantium pariatur voluptatum facere, quos quo excepturi voluptatibus ab? Velit, ullam dignissimos.</p>
+      <h1>Sample Grid 3</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui nostrum porro ratione illo velit. Sequi debitis quisquam recusandae. Ab asperiores esse laudantium sed error quaerat deserunt alias qui voluptatem laboriosam?</p>
     </div>
   </div>
-  
 </body>
 </html>
